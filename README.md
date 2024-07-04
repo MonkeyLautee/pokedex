@@ -23,14 +23,14 @@ https://www.bleepingcomputer.com/news/security/malicious-vscode-extensions-with-
 3. Execute: flutter run
 
 
-## Build an APK
+## Build APK
 
-Execute these commands (Windows):
+Execute this in Windows terminal in the project root directory:
 
-flutter build apk
-rem Just to open the directory faster than manually:
-cd build\app\outputs\apk\release
-explorer .
+- flutter build apk
+- rem Just to open the directory faster than manually:
+- cd build\app\outputs\apk\release
+- explorer .
 
 
 ## Image copyright
