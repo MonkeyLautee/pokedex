@@ -162,10 +162,8 @@ class _HomeState extends State<Home> {
           MyTextField(
             _search,
             hint: 'Search',
-            leading: IconButton(
-              onPressed: ()=>_searchPokemon(context),
-              icon: const Icon(Icons.search,color:Colors.red),
-            ),
+            leading: const Icon(Icons.search,color:Colors.red),
+            onSubmitted: (x)=>_searchPokemon(context),
           ),
           const SizedBox(height: 16),
           Visibility(

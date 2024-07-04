@@ -4,9 +4,11 @@ class MyTextField extends StatelessWidget {
   final TextEditingController controller;
   final String? hint;
   final Widget? leading;
+  final void Function(String)? onSubmitted;
   const MyTextField(this.controller,{
     this.hint,
     this.leading,
+    this.onSubmitted,
     super.key,
   });
   @override
@@ -30,6 +32,7 @@ class MyTextField extends StatelessWidget {
         ),
         controller: controller,
         keyboardType: TextInputType.text,
+        onSubmitted:onSubmitted,
         maxLines:1,
         decoration: InputDecoration(
           contentPadding: const EdgeInsets.symmetric(horizontal:12,vertical:0),
