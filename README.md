@@ -22,7 +22,10 @@ https://www.bleepingcomputer.com/news/security/malicious-vscode-extensions-with-
 2. Launch an Android emulator (usually with a command like this: flutter emulators --launch <my-emulator-name>) or connect an Android phone to the laptop (with "USB debugging" option enabled in "Settings/Developer options").
 3. Execute: flutter run
 
-- To build an APK, execute:
+
+## Build an APK
+
+Execute these commands (Windows):
 
 flutter build apk
 rem Just to open the directory faster than manually:
